@@ -15,9 +15,9 @@ end
 define :ambient_drone do |initial=false|
   use_synth :dark_ambience
   duration = initial ? 4 : 1
-  synth = play choose([:c2, :d2, :e2]), sustain: 8, release: 3, amp: 0
+  synth = play choose([:c2, :d2, :e2]), sustain: 16, amp: 0
   fade_in synth, duration, 2
-  sleep 11
+  sleep 16
 end
 
 # Define soft melody with variations
